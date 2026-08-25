@@ -192,6 +192,7 @@
       transition: background 0.25s, transform 0.25s, box-shadow 0.25s;
       display: inline-flex;
       align-items: center;
+      justify-content: center;
       gap: 8px;
     }
     .btn-primary:hover {
@@ -1034,25 +1035,11 @@
 
     .cta-form {
       display: flex;
+      justify-content: center;
       gap: 12px;
       max-width: 480px;
       margin: 0 auto 20px;
     }
-
-    .cta-input {
-      flex: 1;
-      padding: 14px 20px;
-      border-radius: 100px;
-      border: 1.5px solid rgba(255,255,255,0.2);
-      background: rgba(255,255,255,0.1);
-      color: var(--white);
-      font-family: var(--ff-body);
-      font-size: 0.875rem;
-      outline: none;
-      transition: border-color 0.2s;
-    }
-    .cta-input::placeholder { color: rgba(255,255,255,0.4); }
-    .cta-input:focus { border-color: var(--blush); }
 
     .cta-note {
       font-size: 0.75rem;
@@ -1708,10 +1695,9 @@
       <p class="section-eyebrow">Begin Today</p>
       <h2 class="section-title">Ready for a <em>Purposeful</em> Connection?</h2>
       <p class="cta-desc">
-        Your journey to a meaningful, lasting relationship starts with one step. Enter your email and we'll be in touch to schedule your complimentary consultation.
+        Your journey to a meaningful, lasting relationship starts with one step. Reserve your spot and we'll be in touch to schedule your complimentary consultation.
       </p>
       <div class="cta-form">
-        <input type="email" class="cta-input" placeholder="Enter your email address" />
         <a href="https://pureintentlanding.netlify.app/" target="_blank" rel="noopener" class="btn-primary" style="white-space:nowrap;">Reserve My Spot</a>
       </div>
       <p class="cta-note">Free consultation · No commitment · Strictly confidential</p>

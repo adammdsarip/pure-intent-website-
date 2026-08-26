@@ -124,15 +124,21 @@
       max-width: 1200px;
       margin: 0 auto;
       display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 80px;
+      grid-template-columns: 1fr;
       align-items: center;
       position: relative;
       z-index: 1;
     }
 
+    .hero-text {
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
     .hero-eyebrow {
       font-family: var(--ff-body);
+      justify-content: center;
       font-size: 0.75rem;
       font-weight: 600;
       letter-spacing: 0.2em;
@@ -167,12 +173,13 @@
       font-size: 1.05rem;
       color: var(--grey-mid);
       line-height: 1.8;
-      margin-bottom: 40px;
-      max-width: 460px;
+      margin: 0 auto 40px;
+      max-width: 600px;
     }
 
     .hero-actions {
       display: flex;
+      justify-content: center;
       gap: 16px;
       flex-wrap: wrap;
     }
@@ -218,107 +225,6 @@
     .btn-secondary:hover {
       border-color: var(--navy);
       background: rgba(18,59,142,0.04);
-    }
-
-    .hero-visual {
-      position: relative;
-      display: flex;
-      justify-content: center;
-    }
-
-    .hero-card-stack {
-      position: relative;
-      width: 320px;
-      height: 420px;
-    }
-
-    .hero-card {
-      position: absolute;
-      border-radius: 24px;
-      overflow: hidden;
-      box-shadow: 0 20px 60px rgba(18,59,142,0.12);
-    }
-
-    .hero-card-main {
-      width: 280px;
-      height: 380px;
-      top: 20px; left: 20px;
-      background: linear-gradient(160deg, var(--navy) 0%, #1e4fa8 100%);
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-end;
-      padding: 32px;
-    }
-    .hero-card-main::before {
-      content: '';
-      position: absolute;
-      top: 0; left: 0; right: 0; bottom: 0;
-      background: url("data:image/svg+xml,%3Csvg width='200' height='200' viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='100' cy='80' r='50' fill='rgba(244,140,168,0.15)'/%3E%3Ccircle cx='60' cy='140' r='30' fill='rgba(255,255,255,0.05)'/%3E%3C/svg%3E") center/cover;
-    }
-
-    .hero-card-accent {
-      width: 180px;
-      height: 220px;
-      top: 0; right: 0;
-      background: var(--rose);
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      gap: 8px;
-    }
-
-    .match-icon {
-      width: 56px; height: 56px;
-      background: var(--white);
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 1.6rem;
-      box-shadow: 0 4px 16px rgba(244,140,168,0.3);
-    }
-
-    .match-text {
-      font-family: var(--ff-heading);
-      font-size: 0.9rem;
-      font-weight: 600;
-      color: var(--navy);
-      text-align: center;
-    }
-    .match-sub {
-      font-size: 0.7rem;
-      color: var(--grey-mid);
-      font-family: var(--ff-body);
-    }
-
-    .profile-info {
-      position: relative;
-      z-index: 1;
-    }
-    .profile-badge {
-      background: var(--blush);
-      color: var(--white);
-      font-size: 0.65rem;
-      font-weight: 600;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      padding: 4px 10px;
-      border-radius: 100px;
-      display: inline-block;
-      margin-bottom: 10px;
-    }
-    .profile-name {
-      font-family: var(--ff-heading);
-      font-size: 1.3rem;
-      font-weight: 600;
-      color: var(--white);
-      margin-bottom: 4px;
-    }
-    .profile-detail {
-      font-family: var(--ff-body);
-      font-size: 0.75rem;
-      color: rgba(255,255,255,0.7);
     }
 
     .hero-stats {
@@ -1184,8 +1090,6 @@
 
       section { padding: 72px 24px; }
       .hero { padding: 100px 24px 72px; }
-      .hero-inner { grid-template-columns: 1fr; gap: 48px; }
-      .hero-visual { display: none; }
       .hero-stats { gap: 24px; }
 
       .why-inner { grid-template-columns: 1fr; gap: 48px; }
@@ -1272,23 +1176,6 @@
         <div class="hero-actions">
           <a href="https://pureintentlanding.netlify.app/" target="_blank" rel="noopener" class="btn-primary">Begin Your Journey →</a>
           <a href="#how-it-works" class="btn-secondary">See How It Works</a>
-        </div>
-      </div>
-
-      <div class="hero-visual">
-        <div class="hero-card-stack">
-          <div class="hero-card hero-card-main">
-            <div class="profile-info">
-              <span class="profile-badge">✦ Verified Member</span>
-              <div class="profile-name">Amara S.</div>
-              <div class="profile-detail">32 · Architect · Kuala Lumpur</div>
-            </div>
-          </div>
-          <div class="hero-card hero-card-accent">
-            <div class="match-icon">💍</div>
-            <div class="match-text">Perfect Match</div>
-            <div class="match-sub">Compatibility: 97%</div>
-          </div>
         </div>
       </div>
     </div>

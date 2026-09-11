@@ -757,6 +757,25 @@
     }
     .plan-card.featured .plan-price span { color: rgba(255,255,255,0.5); }
 
+    .plan-price-was {
+      display: block;
+      font-family: var(--ff-body);
+      font-size: 1.05rem;
+      font-weight: 500;
+      color: var(--grey-mid);
+      text-decoration: line-through;
+      margin-bottom: 2px;
+    }
+
+    .plan-promo-note {
+      font-family: var(--ff-body);
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.02em;
+      color: var(--blush);
+      margin: 2px 0 0;
+    }
+
     .plan-desc {
       font-size: 0.82rem;
       color: var(--grey-mid);
@@ -1449,16 +1468,20 @@
 
       <div class="plans-grid">
         <div class="plan-card fade-in">
+          <span class="plan-badge">Limited Offer</span>
           <p class="plan-name">Essential</p>
-          <div class="plan-price">S$790<span>/month</span></div>
+          <div class="plan-price">
+            <span class="plan-price-was">S$388</span>
+            S$188<span>/month</span>
+          </div>
+          <p class="plan-promo-note">Special price valid until December 2026</p>
           <p class="plan-desc">For those beginning their intentional journey with guided introductions.</p>
           <div class="plan-divider"></div>
           <ul class="plan-features">
             <li>Personal consultation session</li>
             <li>2 curated introductions/month</li>
-            <li>Verified member profiles</li>
-            <li>Post-introduction feedback</li>
-            <li>Email support</li>
+            <li>Professional headshot</li>
+            <li>Date planning &amp; preparation</li>
           </ul>
           <a href="https://pureintentlanding.netlify.app/" target="_blank" rel="noopener" class="btn-plan btn-plan-outline">Get Started</a>
         </div>
